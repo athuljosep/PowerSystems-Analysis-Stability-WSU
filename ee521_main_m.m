@@ -4,11 +4,11 @@
 start = tic;
 clearVars = true;
 localUsername = getenv('USERNAME');
-listOfUsernames = {'aryan', 'Aryan Ritwajeet Jha'};
+listOfUsernames = {'aryan', 'Aryan Ritwajeet Jha','Athul'};
 if ismember(localUsername,  listOfUsernames)
     % For user 'aryan', change the current directory to the specified path
     cd(strcat("C:", filesep, "Users", filesep, localUsername, filesep, "Documents", filesep, ...
-        "documents_general", filesep, "PowerSystems-Analysis-Stability-WSU", filesep) )
+        "GitHub", filesep, "PowerSystems-Analysis-Stability-WSU", filesep) )
     addpath(genpath('functions\'))
 else
     fprintf("Are you not me? Might want to add the folder to the path or add folder to the workspace.\n");
